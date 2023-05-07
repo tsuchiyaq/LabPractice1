@@ -1,4 +1,6 @@
 class ReseptionRobot():
+    """ロボットの受け答えなどに関するクラス
+    """
     def __init__(self):
         self.user_name = None
         self.restaurant_name = None
