@@ -1,14 +1,15 @@
 class ReseptionRobot():
     def __init__(self):
-        self.name = None
+        self.user_name = None
+        self.restaurant_name = None
     
-    def greeting(self):
-        print("こんにちは、私は受付ロボットです。あなたの名前は？")
+    def greeting():
+        user_name = input("こんにちは、私は受付ロボットです。あなたの名前は？")
+        return user_name
 
-    def ask_restaurant(self):
-        print(self.name + "さん。どこのレストランが好きですか？")
-
-    def set_name(self, name):
-        self.name = name
-        print(self.name + "さん。どこのレストランが好きですか？")
+    def ask_restaurant(user_name):
+        restaurant_name = input(user_name + "さん。どこのレストランが好きですか？")
+        return restaurant_name
     
+    def end_conversation(user_name):
+        print(user_name + "さん、良い一日を")
