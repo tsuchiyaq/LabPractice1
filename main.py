@@ -2,6 +2,8 @@ import robot
 import io_csv
 
 if __name__ == "__main__":
-    user_name = robot.ReseptionRobot.greeting()
-    restaurant_name = robot.ReseptionRobot.ask_restaurant(user_name)
-    robot.ReseptionRobot.end_conversation(user_name)
+
+    new_user = robot.ReseptionRobot()
+    user_name = new_user.greeting()
+    restaurant_name = new_user.ask_restaurant(user_name)
+    new_user.end_conversation(user_name)
